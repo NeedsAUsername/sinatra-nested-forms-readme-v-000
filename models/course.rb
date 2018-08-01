@@ -7,4 +7,9 @@ class Course
     @name = args[:name]
     @topic = args[:topic]
     COURSES << self
-  end 
+  end
+
+  def self.all
+    COURSES
+  end
+ebd 
