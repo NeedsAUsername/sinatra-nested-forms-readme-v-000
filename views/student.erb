@@ -9,8 +9,16 @@
     <h1>Student</h1>
 
     <div class="student">
-      <h3>Nmae: <%= @student.name %></h3>
+      <h3>Name: <%= @student.name %></h3>
+      <h4>Grade: <%= @student.grade %></h4>
+    </div><br>
 
-    </div>
+    <h1>Courses</h1>
+      <% @courses.each do |course| %>
+        <div class="course">
+          <p>Name: <%= @course.name %></p>
+          <p>Topic: <%= @course.topic %></p>
+        </div><br>
+      <% end %>
   </body>
 </html>
