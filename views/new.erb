@@ -9,10 +9,10 @@
     <form action="/student" method="post">
       <p>Student Name: <input type="text" name="student[name]"></p>
       <p>Student Grade: <input type="text" name="student[grade]"></p>
-      <p>Course Name: <input type="text" name="student[courses][0][name]"></p>
-      <p>Course Topic: <input type="text" name="student[course][0][topic]"></p>
-      <p>Course Name: <input type="text" name="student[courses][1][name]"></p>
-      <p>Course Topic: <input type="text" name="student[course][1][topic]"></p>
+      <p>Course Name: <input type="text" name="student[courses][][name]"></p>
+      <p>Course Topic: <input type="text" name="student[courses][][topic]"></p>
+      <p>Course Name: <input type="text" name="student[courses][][name]"></p>
+      <p>Course Topic: <input type="text" name="student[courses][][topic]"></p>
       <input type="submit">
     </form>
   </body>
